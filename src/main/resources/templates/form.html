@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form</title>
+</head>
+<body>
+
+<h2>Form Input Mahasiswa</h2>
+
+<form action="/save" method="post">
+    <input type="text" name="nama" placeholder="Nama"><br><br>
+    <input type="text" name="nim" placeholder="NIM"><br><br>
+
+    <label>Jenis Kelamin:</label><br>
+    <input type="radio" name="jenisKelamin" value="Laki-laki"> Laki-laki<br>
+    <input type="radio" name="jenisKelamin" value="Perempuan"> Perempuan<br><br>
+
+    <button type="submit">Simpan</button>
+</form>
+
+<a href="/home">Kembali</a>
+
+</body>
+</html>
