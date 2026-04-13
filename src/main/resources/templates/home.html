@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+
+<h2>MY Website 20210140019</h2>
+
+<a href="/form">+ Tambah Data</a>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>NIM</th>
+        <th>Jenis Kelamin</th>
+    </tr>
+
+    <tr th:each="mhs, iterStat : ${list}">
+        <td th:text="${iterStat.count}"></td>
+        <td th:text="${mhs.nama}"></td>
+        <td th:text="${mhs.nim}"></td>
+        <td th:text="${mhs.jenisKelamin}"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
